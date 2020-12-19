@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <div class="formulario">         
+        <form action="formu.php" method="POST"> 
+            <table>
+                <tr>                    
+                    <td><input type="text" placeholder="tu nombre" name="nombre" required patterm="[A-Za-z]+"></td>
+                </tr><!--NOMBRE-->
+                <tr>                    
+                    <td><input type="password" placeholder="tu contraseña" name="password" required patterm="[A-Za-z0-9]+"></td>
+                </tr><!--CONTRASEÑA-->
+                <tr>                    
+                    <td>
+                        <input type="radio" name="genero" value="F" required>FEMENINO
+                        <input type="radio" name="genero" value="M" required>MASCULINO
+                    </td>
+                </tr><!--GENERO-->
+                <tr>                    
+                    <td><input type="email" placeholder="tu correo" name="email" required patterm="[A-Za-z0-9]+"></td>
+                </tr><!--MAIL-->
+                <tr>                    
+                    <td><input type="phone" placeholder="deje su numero" name="telefono" required patterm="[0-9]+"></td>
+                </tr><!--TELEFONO-->
+                <tr>                    
+                    <td>
+                        <select class="seleccion" name="materia"  required>
+                            <option select hidden value="">MATERIAS</option>
+                            <option value="calculo">CALCULO</option>
+                            <option value="fisica">FISICA</option>
+                            <option value="programacion">PROGRAMACION</option>
+                            <option value="database">BASE DE DATOS</option>
+                            <option value="analisis">ANALISIS DE SISTEMAS</option>
+                        </select>                    
+                    </td>
+                </tr><!--MATERIA-->
+                <tr>
+                <td>
+                    <input type="submit" value="ENVIAR" name="enviar">
+                    </td> 
+                </tr><!--BOTON-->
+            </table>
+        </form>
+    </div>
+</body>
+</html>
